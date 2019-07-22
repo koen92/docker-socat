@@ -1,5 +1,3 @@
-FROM scratch
+FROM alpine:latest
 
-WORKDIR /bin
-ADD socat .
-ADD busybox .
+RUN apk update && apk add socat
